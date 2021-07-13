@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compitable" content="ie=edge" />
+    <title>Text To Speech Converter</title>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https:code.responsivevoice.org/responsivevoice.js"
+    ></script>
+
+    <h1>Text to Speech Converter</h1>
+
+    <textarea id="txt" rows="10" cols="10" name="text"></textarea>
+    <input type="button" onclick="textSpeak()" value="submit" />
+
+    <script>
+      function textSpeak() {
+        var text = document.getElementById("txt").value;
+        responsiveVoice.speak(text);
+      }
+    </script>
+  </body>
+</html>
